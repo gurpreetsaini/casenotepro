@@ -6,8 +6,12 @@ import StructuredData from '@/components/StructuredData'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Casenotepro - AI-Powered Case Notes for Social Workers | Professional Documentation App',
-  description: 'Transform your case note documentation with AI-powered speech recognition. Designed for social workers, counselors, and human services professionals worldwide. HIPAA compliant, privacy-first approach.',
+  metadataBase: new URL('https://casenotepro.com'),
+  title: {
+    default: 'Casenotepro - AI-Powered Case Notes for Social Workers',
+    template: '%s | Casenotepro'
+  },
+  description: 'Transform your case note documentation with AI. Dictate naturally, get professionally structured case notes. Built for social workers, counselors, and human services professionals in Australia, New Zealand, and globally.',
   keywords: [
     'social work case notes',
     'case management software',
